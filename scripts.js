@@ -6,7 +6,7 @@ function sendEmail(event) {
 function sendWhatsApp(event) {
   event.preventDefault(); // Impede o envio tradicional do form
   const phoneNumber = "+351917450935"; // Número de WhatsApp
-  const message = "Olá, estou interessado no vosso casamento!"; // Mensagem inicial (opcional)
+  const message = "Olá, confirmo presença no vosso casamento!"; // Mensagem inicial (opcional)
   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   
   // Abre o link do WhatsApp em uma nova aba
