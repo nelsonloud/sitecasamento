@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vera e Nelson</title>
+  
+    <!-- Fonte especial primeiro -->
+    <link href="https://fonts.cdnfonts.com/css/simple-photography" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap depois -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  
+      <!-- Bootstrap Icons (ADICIONE ESTA LINHA) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Seu estilo por último -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
+          </a>    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#" hidden>Link</a>
+              </li>
+            </ul>
+            <form class="d-flex ms-3" role="search" onsubmit="sendEmail(event)">
+              <button class="btn btn-outline-success btn-outline-custom" type="submit">Contacto</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-6 d-flex">
+            <div class="hero-text">
+              <h1 class="display-4 simple-font mb-4">Vera &amp; Nelson</h1>
+              <p>Junte-se a nós para celebrar o nosso grande dia, cheio de amor, alegria e momentos inesquecíveis.</p>
+              
+                  <!-- Contador regressivo -->
+                  <div class="countdown-container mb-4">
+                    <p class="countdown-title mb-2">Faltam:</p> <!-- Mudei h5 para p e adicionei classe -->
+                    <div class="countdown d-flex justify-content-start flex-wrap"> <!-- Ajuste no alinhamento -->
+                      <div class="countdown-item text-center me-2 mb-2"> <!-- Removi mx classes conflicting -->
+                        <div class="countdown-number" id="days">00</div>
+                        <div class="countdown-label">Dias</div>
+                      </div>
+                      <div class="countdown-item text-center me-2 mb-2">
+                        <div class="countdown-number" id="hours">00</div>
+                        <div class="countdown-label">Horas</div>
+                      </div>
+                      <div class="countdown-item text-center me-2 mb-2">
+                        <div class="countdown-number" id="minutes">00</div>
+                        <div class="countdown-label">Minutos</div>
+                      </div>
+                      <div class="countdown-item text-center me-2 mb-2">
+                        <div class="countdown-number" id="seconds">00</div>
+                        <div class="countdown-label">Segundos</div>
+                      </div>
+                    </div>
+                  </div>
+              
+              <form class="d-flex" role="search" onsubmit="sendWhatsApp(event)">
+                <button class="btn btn-primary custom-btn" type="submit">Confirmar presença</button>
+              </form>
+            </div>
+          </div>
+    
+          <div class="col-md-6 p-3">
+            <img src="img/fotos_hero.png" alt="Foto dos noivos" class="img-fluid rounded">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="locais" class="py-5 bg-light"> <!-- Fundo claro para diferenciar -->
+      <div class="container">
+        <h2 class="text-center simple-font mb-5">Cerimônia & Festa</h2> <!-- Título -->
+        
+        <div class="row">
+          <!-- Igreja -->
+          <div class="col-md-6 mb-4 mb-md-0">
+            <div class="card h-100 border-0 shadow-sm">
+              <img src="img/santuario.png" class="card-img-top" alt="Igreja do Casamento">
+              <div class="card-body">
+                <h3 class="h5">Cerimónia Religiosa</h3>
+                <p class="text-muted mb-1">Santuário do Bom Despacho (Cervães!)</p>
+                <p class="mb-2">⏰ 13h00 | 20 Setembro 2025</p>
+                <a href="https://www.google.com/maps?client=firefox-b-d&sca_esv=97e4ebd26c
+                ccd6f2&sxsrf=AHTn8zr58Q6WpiQlqxRUAWUiHJsgE5HHpg:1745086948962&gs_lp=Egxnd3
+                Mtd2l6LXNlcnAiFHNhbnR1YXJpbyBkbyBib20gZGVzKgIIATIGEAAYFhgeMgYQABgWGB4yBhAAG
+                BYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAY
+                FhgeSIo5UJkIWOoncAF4AZABAJgBwgGgAZgWqgEEMC4yMLgBA8gBAPgBAZgCFaAC9RjCAgoQABi
+                wAxjWBBhHwgIMECMYgAQYExgnGIoFwgIKECMYgAQYJxiKBcICBBAjGCfCAhQQLhiABBixAxjRAxi
+                DARjHARiKBcICBBAuGAPCAgQQABgDwgILEC4YgAQYsQMYgwHCAg4QABiABBixAxiDARiKBcICChA
+                AGIAEGEMYigXCAhEQLhiABBixAxjHARiOBRivAcICCxAAGIAEGLEDGIMBwgIKEC4YgAQYQxiKBcI
+                CDxAuGIAEGLEDGEMYigUYCsICCBAAGIAEGLEDwgIFEAAYgATCAgUQLhiABMICERAuGIAEGLEDGIM
+                BGMcBGK8BwgIOEC4YgAQYxwEYyQMYrwHCAgsQLhiABBjHARivAcICIBAuGIAEGLEDGIMBGMcBGK8
+                BGJcFGNwEGN4EGOAE2AEBwgIOEC4YgAQYxwEYywEYrwHCAhoQLhiABBjHARivARiXBRjcBBjeBBj
+                gBNgBAcICBRAAGO8FwgIIEAAYgAQYogTCAh0QLhiABBjHARjLARivARiXBRjcBBjeBBjgBNgBAcIC
+                CBAAGBYYChgemAMAiAYBkAYIugYGCAEQARgUkgcGMS4xNy4zoAecjQOyBwYwLjE3LjO4B-YY&um=
+                1&ie=UTF-8&fb=1&gl=pt&sa=X&geocode=KZ1FGXTUVCQNMfGlu4GSRGaI&daddr=Cerv%C3%A3es" 
+                class="btn btn-outline-primary btn-sm btn-outline-custom" target="_blank">Ver no mapa</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Quinta -->
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm">
+              <img src="img/quinta.png" class="card-img-top" alt="Quinta da Recepção">
+              <div class="card-body">
+                <h3 class="h5">Copo d'água</h3>
+                <p class="text-muted mb-1">Quinta de Mouriz</p>
+                <p class="mb-2">⏰ 15h00 | 20 Setembro 2025</p>
+                <a href="https://www.google.com/maps/dir//4730+392,+EM531-3+202,+4730-392+
+                Pico+de+Regalados/@41.6784078,-8.498471,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x
+                d250147a99b3941:0x4d00048c8350af58!2m2!1d-8.4160702!2d41.6784372?entry=ttu&g_
+                ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D" 
+                class="btn btn-outline-primary btn-sm btn-outline-custom" target="_blank">Ver no mapa</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Contribuições - Versão Segura -->
+    <section id="contribuicoes" class="py-5 bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+            <h2 class="simple-font mb-4">Contribuições</h2>
+            <p class="lead mb-5">Se desejar contribuir para a nossa lua de mel, utilize uma das opções abaixo:</p>
+            
+            <div class="row g-4">
+              <!-- Cartão com IBAN como Imagem -->
+              <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body p-4">
+                    <div class="icon-wrapper mb-3">
+                      <i class="bi bi-bank"></i>
+                    </div>
+                    <h3 class="h5 mb-3">Transferência Bancária</h3>
+                    <div class="iban-image-wrapper mb-4">
+                      <img src="img/ivan.png" alt="IBAN" class="iban-image">
+                      <div class="hover-actions">
+                        <button class="btn btn-dark btn-sm" id="saveIbanBtn">
+                          <i class="bi bi-download me-1"></i>Guardar
+                        </button>
+                      </div>
+                    </div>
+                    <div class="instructions">
+                      <p class="small mb-1"><strong>Instruções:</strong></p>
+                      <ul class="small text-start ps-3">
+                        <li>Use a descrição: <strong>"Casamento Vera & Nelson"</strong></li>
+                        <li>BIC/SWIFT: <code>CGDIPTPL</code> (internacional)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Cartão com QR Code -->
+              <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body p-4">
+                    <div class="icon-wrapper mb-3">
+                      <i class="bi bi-phone"></i>
+                    </div>
+                    <h3 class="h5 mb-3">MB WAY</h3>
+                    <div class="iban-image-wrapper mb-4">
+                      <img src="img/phone.png" alt="numero tel" class="iban-image">
+                    </div>
+                    <div class="instructions">
+                      <p class="small mb-1"><strong>Instruções:</strong></p>
+                      <ul class="small text-start ps-3">
+                        <li>Use a descrição: <strong>"Casamento Vera & Nelson"</strong></li>
+                      </ul>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="alert alert-info mt-5 mx-auto" style="max-width: 600px;">
+              <i class="bi bi-shield-lock me-2"></i>
+              <small>Estes dados são para uso exclusivo dos convidados. Por segurança, evite compartilhar publicamente.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

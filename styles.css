@@ -1,0 +1,184 @@
+body {
+  font-family: 'Merriweather', serif;
+}
+
+.navbar {
+  background-color: #eedcff !important;
+}
+
+#hero {
+  background-color: #f7edff;
+  padding-top: 50px; 
+  padding-bottom: 50px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: left; /* padrão desktop */
+}
+
+.hero-text button {
+  width: auto;
+  align-self: flex-start; /* impede o botão de esticar */
+  margin-top: 15px; /* espaço entre o parágrafo e o botão */
+}
+
+/* Em telas pequenas, centraliza o texto e o botão */
+@media (max-width: 767.98px) {
+  .hero-text {
+    text-align: center;
+    align-items: center;
+  }
+  
+  .hero-text button {
+    align-self: center; /* botão também centralizado */
+  }
+}
+
+.simple-font {
+  font-family: 'Simple Photography', serif;
+}
+
+/* Botão personalizado da navbar */
+.btn-outline-custom {
+  color: #AA4FFF;
+  border: 1px solid #AA4FFF;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-custom:hover,
+.btn-outline-custom:focus {
+  color: #fff;
+  background-color: #AA4FFF;
+  border-color: #AA4FFF;
+}
+
+.custom-btn {
+  color: #fff;
+  background-color: #AA4FFF;  /* Cor de fundo personalizada */
+  border-color: #AA4FFF;      /* Cor da borda personalizada */
+}
+
+.custom-btn:hover,
+.custom-btn:focus {
+  color: #fff;
+  background-color: #8a3fff;  /* Cor de fundo para o estado hover */
+  border-color: #8a3fff;      /* Cor da borda para o estado hover */
+}
+
+.countdown-item {
+  background-color: #eedcff;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  min-width: 70px;
+}
+
+.countdown-item span:first-child {
+  font-weight: bold;
+  display: block;
+  font-size: 1.5rem;
+}
+
+.countdown-label {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .countdown-item {
+    min-width: 60px;
+    padding: 0.3rem 0.5rem;
+  }
+  
+  .countdown-item span:first-child {
+    font-size: 1.2rem;
+  }
+  
+  .countdown-label {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .countdown-item {
+    min-width: 50px;
+    margin: 0 0.2rem !important;
+  }
+  
+  .countdown-item span:first-child {
+    font-size: 1rem;
+  }
+}
+
+#locais .card {
+  transition: transform 0.3s ease;
+}
+
+#locais .card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== SEÇÃO DE CONTRIBUIÇÕES ===== */
+
+#contribuicoes {
+  background-color: #f7edff !important;
+}
+
+#contribuicoes .icon-wrapper {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #f0e5ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contribuicoes .icon-wrapper i {
+  font-size: 1.5rem;
+  color: #8a3fff;
+}
+
+#contribuicoes .iban-image-wrapper {
+  position: relative;
+  margin: 0 auto;
+  max-width: 300px;
+  border: 1px dashed #ddd;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+#contribuicoes .iban-image {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s;
+}
+
+#contribuicoes .iban-image-wrapper:hover .iban-image {
+  opacity: 0.7;
+}
+
+#contribuicoes .hover-actions {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#contribuicoes .iban-image-wrapper:hover .hover-actions {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  #contribuicoes .iban-image-wrapper {
+    max-width: 100%;
+  }
+}
