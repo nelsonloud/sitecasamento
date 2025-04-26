@@ -20,6 +20,10 @@ body {
   text-align: left; /* padrão desktop */
 }
 
+.intro-text {
+  max-width: 400px;
+ }
+
 .hero-text button {
   width: auto;
   align-self: flex-start; /* impede o botão de esticar */
@@ -40,6 +44,15 @@ body {
 
 .simple-font {
   font-family: 'Simple Photography', serif;
+}
+
+.presenca {
+  font-size: 0.9rem;
+  color: #6c757d;
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
 }
 
 /* Botão personalizado da navbar */
