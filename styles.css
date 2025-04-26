@@ -30,6 +30,40 @@ body {
   margin-top: 15px; /* espaço entre o parágrafo e o botão */
 }
 
+.highlight-text {
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline; /* <-- forçar alinhamento com o texto normal */
+  padding-bottom: 2px; /* <-- empurrar ligeiramente o texto para baixo */
+}
+
+.highlight-text::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background-color: #AA4FFF; /* tua cor roxa */
+  width: 0;
+  left: 0;
+  bottom: 0;
+  
+  animation: underlineAnim 2s infinite;
+}
+
+@keyframes underlineAnim {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
 /* Em telas pequenas, centraliza o texto e o botão */
 @media (max-width: 767.98px) {
   .hero-text {
