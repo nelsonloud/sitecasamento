@@ -76,9 +76,18 @@
                   <div class="presenca mb-3">
                     Agradecemos confirmação até ao dia 1 de Agosto
                   </div>
-              <form class="d-flex" role="search" onsubmit="sendWhatsApp(event)">
-                <button class="btn btn-primary custom-btn" type="submit">Confirmar presença</button>
-              </form>
+              <button class="btn btn-primary custom-btn" onclick="openModal()">Confirmar Presença</button>
+              <!-- Modal -->
+              <div id="confirmationModal">
+                <div class="modal-content-custom">
+                  <h2>Confirmar Presença</h2>
+                  <p>Deseja enviar a confirmação para quem?</p>
+                  <button onclick="sendWhatsApp('noiva')" class="btn-primary">👰 Noiva</button>
+                  <button onclick="sendWhatsApp('noivo')" class="btn-primary">🤵 Noivo</button>
+                  <br><br>
+                  <button onclick="closeModal()" class="cancel-btn">Cancelar</button>
+                </div>
+              </div>
             </div>
           </div>
     
