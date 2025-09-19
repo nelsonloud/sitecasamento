@@ -247,31 +247,6 @@ body {
   }
 }
 
-/* Modal - fundo escuro */
-#confirmationModal {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-/* Modal - conteúdo */
-.modal-content-custom {
-  background-color: #fff;
-  margin: 10% auto;
-  padding: 30px 20px;
-  border-radius: 10px;
-  max-width: 400px;
-  text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  animation: fadeIn 0.3s ease-in-out;
-}
-
 /* Título */
 .modal-content-custom h2 {
   margin-bottom: 20px;
@@ -318,3 +293,149 @@ body {
   from {opacity: 0; transform: scale(0.95);}
   to {opacity: 1; transform: scale(1);}
 }
+
+/* Novos estilos para a seção de menu */
+      #menu {
+        background-color: #fff;
+        padding: 80px 0;
+      }
+      
+      .menu-category {
+        margin-bottom: 50px;
+      }
+      
+      .menu-category h3 {
+        font-family: 'Simple Photography', serif;
+        color: #AA4FFF;
+        border-bottom: 2px solid #eedcff;
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+      }
+      
+      .menu-item {
+        margin-bottom: 20px;
+        padding-left: 20px;
+        position: relative;
+      }
+      
+      .menu-item:before {
+        content: "•";
+        color: #AA4FFF;
+        position: absolute;
+        left: 0;
+      }
+      
+      .menu-item-title {
+        font-weight: 600;
+        color: #333;
+      }
+      
+      .menu-item-description {
+        color: #666;
+        font-size: 0.95rem;
+      }
+      
+      .menu-alternative {
+        background-color: #f9f5ff;
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 10px;
+        border-left: 3px solid #AA4FFF;
+      }
+      
+      .wine-suggestion {
+        background-color: #f0e5ff;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 30px;
+      }
+      
+      .wine-suggestion h4 {
+        color: #5a287d;
+        margin-bottom: 15px;
+      }
+
+      /* Novos estilos para a seção de mesas */
+      #mesas {
+        background-color: #f7edff;
+        padding: 80px 0;
+      }
+      
+      .mesa-card {
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        margin-bottom: 30px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        overflow: hidden;
+      }
+      
+      .mesa-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      }
+      
+      .mesa-header {
+        background-color: #AA4FFF;
+        color: white;
+        padding: 15px 20px;
+        position: relative;
+      }
+      
+      .mesa-header h3 {
+        margin: 0;
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      
+      .mesa-title {
+        font-weight: 600;
+      }
+      
+      .mesa-music {
+        font-size: 1rem;
+        font-style: italic;
+      }
+      
+      .mesa-body {
+        padding: 20px;
+      }
+      
+      .convidados-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 10px;
+      }
+      
+      .convidado {
+        background-color: #f9f5ff;
+        padding: 8px 12px;
+        border-radius: 6px;
+        text-align: center;
+        font-size: 0.9rem;
+      }
+
+      .mesa-number {
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin-right: 10px;
+      }
+      
+      @media (max-width: 768px) {
+        .mesa-header h3 {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 5px;
+        }
+        
+        .convidados-list {
+          grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        }
+      }

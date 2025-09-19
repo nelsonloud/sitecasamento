@@ -73,21 +73,11 @@
                       </div>
                     </div>
                   </div>
-                  <div class="presenca mb-3">
-                    Agradecemos confirmação até ao dia 21 de Agosto
-                  </div>
-              <button class="btn btn-primary custom-btn" onclick="openModal()">Confirmar Presença</button>
-              <!-- Modal -->
-              <div id="confirmationModal">
-                <div class="modal-content-custom">
-                  <h2>Confirmar Presença</h2>
-                  <p>Deseja enviar a confirmação para quem?</p>
-                  <button onclick="sendWhatsApp('noiva')" class="btn-primary">👰 Noiva</button>
-                  <button onclick="sendWhatsApp('noivo')" class="btn-primary">🤵 Noivo</button>
-                  <br><br>
-                  <button onclick="closeModal()" class="cancel-btn">Cancelar</button>
-                </div>
-              </div>
+                   <!--<div class="presenca mb-3">
+                    Agradecemos confirmação até ao dia 1 de Agosto
+                  </div>-->
+              <button class="btn btn-primary custom-btn" onclick="downloadMissal()">Download do Missal 📖</button>
+              <a id="downloadMissal" href="download/missal_de_casamento_phone.pdf" download style="display: none;"></a>
             </div>
           </div>
     
@@ -131,6 +121,474 @@
                 class="btn btn-outline-primary btn-sm btn-outline-custom" target="_blank">Ver no mapa</a>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOVA SEÇÃO: MESAS -->
+    <section id="mesas" class="py-5">
+      <div class="container">
+        <h2 class="text-center simple-font mb-5">Distribuição das Mesas</h2>
+        <p class="text-center mb-5">Cada mesa tem a sua própria música tema para celebrar este dia especial!</p>
+        
+        <div class="row">
+          <!-- Mesa 1 -->
+          <div class="col-lg-6">
+            <div class="mesa-card">
+              <div class="mesa-header">
+                <h3>
+                  <span class="mesa-title">Mesa <span class="mesa-number">1</span></span>
+                  <span class="mesa-music">Calema - Te Amo</span>
+                </h3>
+              </div>
+              <div class="mesa-body">
+                <div class="convidados-list">
+                  <div class="convidado">Nélida</div>
+                  <div class="convidado">Elber</div>
+                  <div class="convidado">Alex</div>
+                  <div class="convidado">Christian</div>
+                  <div class="convidado">Susana</div>
+                  <div class="convidado">Joshua</div>
+                  <div class="convidado">Alda</div>
+                  <div class="convidado">Milton</div>
+                  <div class="convidado">Jéssica</div>
+                  <div class="convidado">Isabel</div>
+                  <div class="convidado">Wilson</div>
+                  <div class="convidado">Bruno</div>
+                  <div class="convidado">Isis</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Mesa 2 -->
+          <div class="col-lg-6">
+            <div class="mesa-card">
+              <div class="mesa-header">
+                <h3>
+                   <span class="mesa-title">Mesa <span class="mesa-number">2</span></span>
+                  <span class="mesa-music">Queen - Somebody to Love</span>
+                </h3>
+              </div>
+              <div class="mesa-body">
+                <div class="convidados-list">
+                  <div class="convidado">Mafalda</div>
+                  <div class="convidado">Emanuel</div>
+                  <div class="convidado">Tiago</div>
+                  <div class="convidado">Sónia</div>
+                  <div class="convidado">Fátima</div>
+                  <div class="convidado">Custódia</div>
+                  <div class="convidado">Sérgio</div>
+                  <div class="convidado">Janaína</div>
+                  <div class="convidado">Isabela</div>
+                  <div class="convidado">Teresa</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Mesa 3 -->
+          <div class="col-lg-6">
+            <div class="mesa-card">
+              <div class="mesa-header">
+                <h3>
+                   <span class="mesa-title">Mesa <span class="mesa-number">3</span></span>
+                  <span class="mesa-music">Phil Collins - In The Air Tonight</span>
+                </h3>
+              </div>
+              <div class="mesa-body">
+                <div class="convidados-list">
+                  <div class="convidado">Conceição</div>
+                  <div class="convidado">José</div>
+                  <div class="convidado">Alexandre</div>
+                  <div class="convidado">Ana</div>
+                  <div class="convidado">Joana</div>
+                  <div class="convidado">Rosa</div>
+                  <div class="convidado">Isabel</div>
+                  <div class="convidado">Adão</div>
+                  <div class="convidado">Simão</div>
+                  <div class="convidado">Lourenço</div>
+                  <div class="convidado">Marinho</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Mesa 4 -->
+          <div class="col-lg-6">
+            <div class="mesa-card">
+              <div class="mesa-header">
+                <h3>
+                   <span class="mesa-title">Mesa <span class="mesa-number">4</span></span>
+                  <span class="mesa-music">ABBA - Super Trouper</span>
+                </h3>
+              </div>
+              <div class="mesa-body">
+                <div class="convidados-list">
+                  <div class="convidado">Carlos</div>
+                  <div class="convidado">Laurinda</div>
+                  <div class="convidado">Gabriela</div>
+                  <div class="convidado">Joel</div>
+                  <div class="convidado">Fernando</div>
+                  <div class="convidado">Dolores</div>
+                  <div class="convidado">Andreia</div>
+                  <div class="convidado">André</div>
+                  <div class="convidado">Ariana</div>
+                  <div class="convidado">Isabel</div>
+                  <div class="convidado">Zé Bernardo</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Adicione as outras mesas seguindo o mesmo padrão -->
+          <!-- Mesa 5 -->
+          <div class="col-lg-6">
+            <div class="mesa-card">
+              <div class="mesa-header">
+                <h3>
+                   <span class="mesa-title">Mesa <span class="mesa-number">5</span></span>
+                  <span class="mesa-music">Mayra Andrade - Afeto</span>
+                </h3>
+              </div>
+              <div class="mesa-body">
+                <div class="convidados-list">
+                  <div class="convidado">Gaudino</div>
+                  <div class="convidado">Gabriela</div>
+                  <div class="convidado">Nataniel</div>
+                  <div class="convidado">Nádia</div>
+                  <div class="convidado">Lázaro</div>
+                  <div class="convidado">Edodie</div>
+                  <div class="convidado">Mário</div>
+                  <div class="convidado">Pedro</div>
+                  <div class="convidado">Evanilsa</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Mesa 6 -->
+          <div class="col-lg-6">
+            <div class="mesa-card">
+              <div class="mesa-header">
+                <h3>
+                   <span class="mesa-title">Mesa <span class="mesa-number">6</span></span>
+                  <span class="mesa-music">Linkin Park - Somewhere I Belong</span>
+                </h3>
+              </div>
+              <div class="mesa-body">
+                <div class="convidados-list">
+                  <div class="convidado">Ana</div>
+                  <div class="convidado">Fábio</div>
+                  <div class="convidado">António</div>
+                  <div class="convidado">João</div>
+                  <div class="convidado">Cátia</div>
+                  <div class="convidado">Dionísio</div>
+                  <div class="convidado">Júlio</div>
+                  <div class="convidado">Nina</div>
+                  <div class="convidado">Hugo</div>
+                  <div class="convidado">Eva</div>
+                  <div class="convidado">Samuel</div>
+                  <div class="convidado">Catarina</div>
+                  <div class="convidado">Diogo</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <!-- Mesa 7 -->
+          <div class="col-lg-6">
+            <div class="mesa-card">
+              <div class="mesa-header">
+                <h3>
+                   <span class="mesa-title">Mesa <span class="mesa-number">7</span></span>
+                  <span class="mesa-music">Led Zeppelin - Immigrant Song</span>
+                </h3>
+              </div>
+              <div class="mesa-body">
+                <div class="convidados-list">
+                  <div class="convidado">Rita</div>
+                  <div class="convidado">Márcio</div>
+                  <div class="convidado">Daniela</div>
+                  <div class="convidado">Marco</div>
+                  <div class="convidado">Margarida</div>
+                  <div class="convidado">João</div>
+                  <div class="convidado">Márcio</div>
+                  <div class="convidado">Ana</div>
+                  <div class="convidado">Pedro</div>
+                  <div class="convidado">Veronika</div>
+                  <div class="convidado">Thierry</div>
+                  <div class="convidado">Alba</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                              <!-- Mesa 8 -->
+          <div class="col-lg-6">
+            <div class="mesa-card">
+              <div class="mesa-header">
+                <h3>
+                   <span class="mesa-title">Mesa <span class="mesa-number">8</span></span>
+                  <span class="mesa-music">Kaiser Chiefs - Ruby</span>
+                </h3>
+              </div>
+              <div class="mesa-body">
+                <div class="convidados-list">
+                  <div class="convidado">Sameiro</div>
+                  <div class="convidado">João</div>
+                  <div class="convidado">Luísa</div>
+                  <div class="convidado">Jorge</div>
+                  <div class="convidado">Maria João</div>
+                  <div class="convidado">Gustavo</div>
+                  <div class="convidado">Elisabete</div>
+                  <div class="convidado">José</div>
+                  <div class="convidado">Margarida</div>
+                  <div class="convidado">Francisca</div>
+                  <div class="convidado">Júlio</div>
+                  <div class="convidado">Soraia</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                                        <!-- Mesa 9 -->
+          <div class="col-lg-6">
+            <div class="mesa-card">
+              <div class="mesa-header">
+                <h3>
+                   <span class="mesa-title">Mesa <span class="mesa-number">9</span></span>
+                  <span class="mesa-music">Cazuza - Preciso Dizer Que Te Amo</span>
+                </h3>
+              </div>
+              <div class="mesa-body">
+                <div class="convidados-list">
+                  <div class="convidado">Rita</div>
+                  <div class="convidado">André</div>
+                  <div class="convidado">Francisca</div>
+                  <div class="convidado">Daniel</div>
+                  <div class="convidado">Maria João</div>
+                  <div class="convidado">Cátia</div>
+                  <div class="convidado">Pedro</div>
+                  <div class="convidado">Mafalda</div>
+                  <div class="convidado">Joana</div>
+                  <div class="convidado">Paulo</div>
+                  <div class="convidado">Rita</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                                          <!-- Mesa 10 -->
+          <div class="col-lg-6">
+            <div class="mesa-card">
+              <div class="mesa-header">
+                <h3>
+                   <span class="mesa-title">Mesa <span class="mesa-number">10</span></span>
+                  <span class="mesa-music">Muse - Bliss</span>
+                </h3>
+              </div>
+              <div class="mesa-body">
+                <div class="convidados-list">
+                  <div class="convidado">Berta</div>
+                  <div class="convidado">Pedro</div>
+                  <div class="convidado">Vera</div>
+                  <div class="convidado">Pedro</div>
+                  <div class="convidado">Mariana</div>
+                  <div class="convidado">João</div>
+                  <div class="convidado">Margarida</div>
+                  <div class="convidado">Andreia</div>
+                  <div class="convidado">Joana</div>
+                  <div class="convidado">Hugo</div>
+                  <div class="convidado">Leonor</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                                                    <!-- Mesa 11 -->
+          <div class="col-lg-6">
+            <div class="mesa-card">
+              <div class="mesa-header">
+                <h3>
+                   <span class="mesa-title">Mesa <span class="mesa-number">11</span></span>
+                  <span class="mesa-music">Quatro e Meia - A Terra Gira</span>
+                </h3>
+              </div>
+              <div class="mesa-body">
+                <div class="convidados-list">
+                  <div class="convidado">Alice</div>
+                  <div class="convidado">Humberto</div>
+                  <div class="convidado">Isabel</div>
+                  <div class="convidado">Rui</div>
+                  <div class="convidado">Fabiane</div>
+                  <div class="convidado">Paulo</div>
+                  <div class="convidado">Sofia</div>
+                  <div class="convidado">Ana</div>
+                  <div class="convidado">Bráulio</div>
+                  <div class="convidado">Bernardo</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+                                                    <!-- Mesa 12 -->
+          <div class="col-lg-6">
+            <div class="mesa-card">
+              <div class="mesa-header">
+                <h3>
+                   <span class="mesa-title">Mesa <span class="mesa-number">12</span></span>
+                  <span class="mesa-music">Beatles - Come Together</span>
+                </h3>
+              </div>
+              <div class="mesa-body">
+                <div class="convidados-list">
+                  <div class="convidado">Alindo</div>
+                  <div class="convidado">Delfim</div>
+                  <div class="convidado">Conceição</div>
+                  <div class="convidado">Carla</div>
+                  <div class="convidado">Fernando</div>
+                  <div class="convidado">Tiago</div>
+                  <div class="convidado">Carlos</div>
+                  <div class="convidado">Anabela</div>
+                  <div class="convidado">Carlos</div>
+                  <div class="convidado">Joana</div>
+                  <div class="convidado">João</div>
+                  <div class="convidado">Duarte</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Continue adicionando as mesas 7 a 12 seguindo o mesmo padrão -->
+
+        </div>
+        
+        <div class="text-center mt-5">
+          <p>Encontre a sua mesa e prepare-se para celebrar connosco!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOVA SEÇÃO: MENU -->
+    <section id="menu" class="py-5">
+      <div class="container">
+        <h2 class="text-center simple-font mb-5">Menu do Casamento</h2>
+        
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+                        
+            <!-- Entrada -->
+            <div class="menu-category">
+              <h3>🥗 Entrada</h3>
+              <div class="menu-item">
+                <div class="menu-item-title">Folhado de gambas</div>
+                <div class="menu-item-description">Com molho de caju, salada gourmet e redução de balsâmico</div>
+              </div>
+              <div class="menu-alternative">
+                <div class="menu-item-title">Alternativa para alergias</div>
+                <div class="menu-item-description">Folhado de legumes com salada gourmet e redução de balsâmico (para pessoas com alergia a marisco)</div>
+              </div>
+            </div>
+            
+            <!-- Prato de Peixe -->
+            <div class="menu-category">
+              <h3>🐟 Prato de Peixe</h3>
+              <div class="menu-item">
+                <div class="menu-item-title">Lombos de bacalhau com broa</div>
+                <div class="menu-item-description">Em cama de grelos, batata a murro e tomate cherry</div>
+              </div>
+              <div class="menu-alternative">
+                <div class="menu-item-title">Alternativa</div>
+                <div class="menu-item-description">Tranches de pescada em crosta de cereais, em cama de espinafres, batata paris e feijão verde</div>
+              </div>
+              <div class="menu-alternative">
+                <div class="menu-item-title">Menu Infantil</div>
+                <div class="menu-item-description">Filetes de pescada com arroz seco</div>
+              </div>
+            </div>
+            
+            <!-- Corta Sabores -->
+            <div class="menu-category">
+              <h3>🍧 Corta Sabores</h3>
+              <div class="menu-item">
+                <div class="menu-item-title">Sorvete de limão</div>
+                <div class="menu-item-description">Com canela e limoncelo</div>
+              </div>
+            </div>
+            
+            <!-- Prato de Carne -->
+            <div class="menu-category">
+              <h3>🍖 Prato de Carne</h3>
+              <div class="menu-item">
+                <div class="menu-item-title">Lombinho de porco à Wellington</div>
+                <div class="menu-item-description">Recheado com queijo Philadelphia, batata assada, feijão verde e tomate cherry</div>
+              </div>
+              <div class="menu-alternative">
+                <div class="menu-item-title">Alternativa</div>
+                <div class="menu-item-description">Taco de posta à Mirandesa, com acompanhamentos do prato principal</div>
+              </div>
+              <div class="menu-alternative">
+                <div class="menu-item-title">Menu Infantil</div>
+                <div class="menu-item-description">Bife com ovo e batata frita</div>
+              </div>
+            </div>
+            
+            <!-- Sobremesa -->
+            <div class="menu-category">
+              <h3>🍰 Sobremesa</h3>
+              <div class="menu-item">
+                <div class="menu-item-title">Petit gâteau de caramelo salgado</div>
+                <div class="menu-item-description">Com sorvete de limão</div>
+              </div>
+            </div>
+            
+            <!-- Café e Digestivos -->
+            <div class="menu-category">
+              <h3>☕ Café, Digestivos e Chás</h3>
+              <div class="menu-item">
+                <div>Whisky J&B 15 anos</div>
+                <div>Aguardente velha CRF</div>
+                <div>Baileys</div>
+                <div>Licor Beirão</div>
+              </div>
+            </div>
+            
+            <!-- Sugestão de Vinhos -->
+            <div class="wine-suggestion">
+              <h4>🍷 Sugestão de Vinhos</h4>
+              <div class="row">
+                <div class="col-md-6">
+                  <h5>Vinhos Brancos</h5>
+                  <div class="menu-item">
+                    <div class="menu-item-title">Vinho Verde</div>
+                    <div class="menu-item-description">Aveleda Alvarinho</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu-item-title">Maduro Branco</div>
+                    <div class="menu-item-description">Defesa (Alentejo)</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h5>Vinhos Tintos</h5>
+                  <div class="menu-item">
+                    <div class="menu-item-title">Vinho Verde Tinto</div>
+                    <div class="menu-item-description">Adega de Ponte da Barca</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu-item-title">Maduro Tinto</div>
+                    <div class="menu-item-description">Quinta do Valado (Douro)</div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu-item-title">Maduro Tinto</div>
+                    <div class="menu-item-description">Herdade dos Grous (Alentejo)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -209,4 +667,3 @@
     <script src="scripts.js"></script>
   </body>
 </html>
-

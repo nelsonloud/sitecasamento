@@ -9,32 +9,10 @@ function sendEmail(event) {
     noiva: "351917450935"
   };
 
-  function sendWhatsApp(person) {
-    const phoneNumber = contacts[person];
-    const message = "Olá, confirmo presença no vosso casamento!";
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappURL, "_blank");
-    
-    // Fechar o modal depois do clique
-    closeModal();
+  function downloadMissal() {
+    document.getElementById('downloadMissal').click();
   }
-
-  function openModal() {
-    document.getElementById("confirmationModal").style.display = "block";
-  }
-
-  function closeModal() {
-    document.getElementById("confirmationModal").style.display = "none";
-  }
-
-  // Fecha o modal se o utilizador clicar fora da área do conteúdo
-  window.onclick = function(event) {
-    const modal = document.getElementById("confirmationModal");
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  };
-
+  
   // Data do casamento - 20 de setembro de 2025, horário de Lisboa
   const weddingDate = new Date('2025-09-20T00:00:00+01:00');
   
