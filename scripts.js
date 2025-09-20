@@ -14,7 +14,7 @@ function sendEmail(event) {
   }
   
   // Data do casamento - 20 de setembro de 2025, horário de Lisboa
-  const weddingDate = new Date('2025-09-20T00:00:00+01:00');
+  /* const weddingDate = new Date('2025-09-20T00:00:00+01:00');
   
   function updateCountdown() {
     const now = new Date();
@@ -33,7 +33,7 @@ function sendEmail(event) {
   
   // Atualizar a cada segundo
   setInterval(updateCountdown, 1000);
-  updateCountdown(); // Chamar imediatamente para evitar atraso inicial
+  updateCountdown(); // Chamar imediatamente para evitar atraso inicial */
 
 // ===== CONTRIBUIÇÕES =====
 
